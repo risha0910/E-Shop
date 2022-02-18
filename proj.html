@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    img {
+        float: left;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: darkorchid;
+    }
+
+    /* .active {
+  background-color: #04AA6D;
+} */
+
+    table,
+    tr,
+    td,
+    th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+
+}
+    
+
+    #myText {
+        float: right;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/apple_music_logo.png" height="50px" width="50px">
+        <h2>
+            <strong>My E-Shop</strong>
+        </h2>
+    </div>
+    <p>Music is an art form, and opinions come into play.At times, music serves to enhance the written the word and, in the
+        absence of written expression, communicates on its own. Music is the creation of culture, emotions, feelings, and
+        surroundings that reflect the human condition as well as the condition of its creator.</p>
+    <hr>
+    <ul>
+        <li>
+            <a class="active" href="proj.html">Home</a>
+        </li>
+        <li>
+           <a href="offers.html">Offers</a>
+        </li>
+        <li>
+            <a href="products.html">Products</a>
+        </li>
+        <li>
+            <a href="login.html">Login</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+        <input type="text" id="myText" placeholder="search">
+    </ul>
+    <br>
+    <label for="category">Category list</label>
+
+    <select name="category" id="cat">
+        <option value="volvo">Men</option>
+        <option value="saab">Women</option>
+        <option value="mercedes">Kids</option>
+        <option value="audi">More</option>
+    </select>
+    <input type="text" id="Text" placeholder="search">
+    <button type="button">Add to cart</button>
+    <span><i> [ 0 ] Items in your cart </i></span>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="photo-1483985988355-763728e1935b.jfif" style="width:100%; border: 5px solid black;">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="R.jfif" style="width:100%; border: 5px solid black;">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="big-winter-sale-winter-clothes-web-banner-poster-outerwear-old-collection-discount-stylish-fashionable-designers-82330277.jpg" style="width:100%; border: 5px solid black;">
+         
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </body>
+    </html>

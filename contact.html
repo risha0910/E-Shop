@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    img {
+        float: left;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: darkorchid;
+    }
+
+    /* .active {
+  background-color: #04AA6D;
+} */
+
+    table,
+    tr,
+    td,
+    th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+
+    }
+
+
+    #myText {
+        float: right;
+    }
+</style>
+
+<body style="background-color: lightskyblue">
+    <div class="container">
+        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/apple_music_logo.png" height="50px"
+            width="50px">
+        <h2>
+            <strong>My E-Shop</strong>
+        </h2>
+    </div>
+    <p>Music is an art form, and opinions come into play.At times, music serves to enhance the written the word and, in
+        the
+        absence of written expression, communicates on its own. Music is the creation of culture, emotions, feelings,
+        and
+        surroundings that reflect the human condition as well as the condition of its creator.</p>
+    <hr>
+    <ul>
+        <li>
+            <a class="active" href="proj.html">Home</a>
+        </li>
+        <li>
+            <a href="offers.html">Offers</a>
+        </li>
+        <li>
+            <a href="products.html">Products</a>
+        </li>
+        <li>
+            <a href="login.html">Login</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+        <input type="text" id="myText" placeholder="search">
+    </ul>
+    <br>
+    <label for="category">Category list</label>
+
+    <select name="category" id="cat">
+        <option value="volvo">Men</option>
+        <option value="saab">Women</option>
+        <option value="mercedes">Kids</option>
+        <option value="audi">More</option>
+    </select>
+    <input type="text" id="Text" placeholder="search">
+    <button type="button">Add to cart</button>
+    <span><i> [ 0 ] Items in your cart </i></span>
+    <h2 style="text-align: center">Contact-Form</h2>
+    <a href="proj.html">Back to home page</a>
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
